@@ -1,5 +1,5 @@
 # Paper Name:
-  **_Multi-task learning of cascaded CNN for facial attribute classificationPR_**
+  **_Multi-task learning of cascaded CNN for facial attribute classification PR_**
 
 # 1.以前方法的缺陷:
 * are based on the fixed loss weight without considering the differences of facial attributes
@@ -8,7 +8,7 @@
 
 # 2.遇到了什么问题:
 ~~~
-viewpoint、 illumination、expression
+viewpoint、illumination、expression
 ~~~
 # 3.提出了什么:
 **_MFCA_** propose a novel multi-task learning of cascaded cnn method ,
