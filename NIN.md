@@ -58,6 +58,15 @@
 
 * what is cascaded cross channel parametric pooling:
 
+* 1*1卷积 有什么用? (需要再理解一下)
+~~~
+  1.实现跨通道的交互和信息整合
+  2.进行卷积核通道数的降维和升维
+~~~
+* NIN 与1*1 卷积之间的关系:
+
+  MLP层 可以通过多层1*1卷积层替代
+
 # 8.单词:
 
 discriminability 可区分性<br/>
