@@ -25,7 +25,7 @@
 * relace fully connected layers with ** global average pooling layer **
 
 # 3.数据集:
-	ImageNet and ILSVRC
+	ImageNet and
 
 # 4.解决了什么:
 ~~~
