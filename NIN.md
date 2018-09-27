@@ -16,7 +16,6 @@
 # 2.提出了什么:
 
 1. propose a structure called mlpconv layer consisting of multiple fully connected layers with nonlinear activation functions
-
 * replace **GLM** with a **'micro network'** structure which is a general nonlinear function approximator.
 
 * propose large deep CNN to enhance model discriminability for local pathes within the receptive field (*增强在感知领域下的局部补丁的模型区分性* ) which is stacking of multiple mlpconv layers.
@@ -32,11 +31,9 @@
 ~~~
 # 5.方法的细节:
 1. why choose MLP as the universal function approximator:
-
   *  MLP is compatible with the structure of CNN which is trained using bp
   *  MLP can be a deep model itself, which is consistent with the spirit of feature re-use.
 * why replace fully connected layer with global average pooling :
-
   * the  fully connected layers are prone to overfitting, which hampering the generalization ability of the overall work.
   * it is more native to the convolution structure by enforcing correspondences between feature maps and categories
   * there is no parameters to optimize in the global average pooling
@@ -52,11 +49,9 @@
 1. why filter is a GLM for the underlying data path:
 
   answer:
-
 * what is the distributions of the latent concepts:
 
   answer:
-
 * what is cascaded cross channel parametric pooling:
 
   就是mlp conv layer. 也等价于 1*1 的卷积层
