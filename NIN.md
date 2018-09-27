@@ -4,15 +4,14 @@
   **_Network In Network_**
 
 # 1.有什么问题:
-~~~
-  conventional CNN uses linear filter followed by a nonlinear activation function to scan the input, however the level of abstraction is low with GLM.
 
-  We need to replace GLM with a more potent nonlinear function approximator to enhance the abstraction ability of the local model.
+  * conventional CNN uses linear filter followed by a nonlinear activation function to scan the input, however the level of abstraction is low with GLM.
 
-  it is difficult to intepret how the categoriy level information from the objective cost layer is passed back to the previous convolution layer due to the fully connected layer which act as a black box in between
+  * We need to replace GLM with a more potent nonlinear function approximator to enhance the abstraction ability of the local model.
 
-  the fully connected layers are prone to overfitting without the dropout, hampering the regularization ability of the overall structure.
-~~~
+  * it is difficult to intepret how the categoriy level information from the objective cost layer is passed back to the previous convolution layer due to the fully connected layer which act as a black box in between
+
+  * the fully connected layers are prone to overfitting without the dropout, hampering the regularization ability of the overall structure.
 
 # 2.提出了什么:
 
