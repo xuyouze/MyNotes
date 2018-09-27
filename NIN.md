@@ -27,7 +27,7 @@
 # 3.数据集:
 	CIFAR-10, CIFAR-100, SVHN, MNIST
 
-# 4.有什么缺陷:
+# 4.解决了什么:
 ~~~
 
 ~~~
@@ -95,7 +95,7 @@ manifold 多种<br/>
 multilayer perceptron MLP<br/>
 confidence value 置信度<br/>
 adopting 使用<br/>
-over-complete 过度完整<br/>
+over-complete 超完备<br/>
 cross channel parametric pooling layer 交叉通道参数池化层<br/>
 Namely 换句话说<br/>
 impose 强加<br/>
