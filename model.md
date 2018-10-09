@@ -1,18 +1,18 @@
 
 # Paper Name:
 
-# 1.有什么问题:
+# 1.background problem:
 
-# 2.提出了什么:
+# 2.the proposed methods:
 
-# 3.数据集:
+# 3.dataset:
 
-# 4.有什么缺陷:
+# 4.advantages:
 
-# 5.方法的细节:
+# 5.the detail of methods:
 
-# 6.方法有什么贡献:
+# 6.contribution:
 
-# 7.阅读中不懂的问题:
+# 7.any questions during the reading :
 
-# 8.单词:
+# 8. vocabulary:

@@ -1,20 +1,20 @@
 
 # Paper Name:
 **_Going deeper with convolution_**
-# 1.有什么问题:
+# 1.background problem:
   * to improve the performance of cnn in accuary and speed .
   * under the limit of size of the training set , bigger size means a larger number of parameters,which makes the enlarged network more prone to overfitting
   * another drawback of uniformly increased network size is the dramatically increased use of computational resources.
 
-# 2.提出了什么:
+# 2.the proposed methods:
   * propose a deep convolution neural network architeture codenamed Inception
   * propose a cnn architeture which is stacking of Inception
 
-# 3.数据集:
+# 3.dataset:
 
-# 4.有什么缺陷:
+# 4.advantages:
 
-# 5.方法的细节:
+# 5.the detail of methods:
   * why was the Inception proposed ?
     * answer
 
@@ -28,17 +28,19 @@
 
   * the structure of Inception as followd:
 
-  ![Aaron Swartz](https://raw.githubusercontent.com/xuyouze/MyNotes/master/images/Inception.jpg)
-    * 1*1 convolution                     
+  ![Aaron Swartz](https://raw.githubusercontent.com/xuyouze/MyNotes/master/images/Inception.jpg)<br/>
+
+    * 1\*1 convolution  
     * 1\*1 convolution + 3\*3 convolution
     * 1\*1 convolution + 5\*5 convolution
     * 3\*3 maxpooling + 1\*1 convolution  
+
     it is a combination of all those layers with their output filter banks concatenated into a single output vector forming the input of the next stages.
 
 
-# 6.方法有什么贡献:
+# 6.contribution:
 
-# 7.阅读中不懂的问题:
+# 7.any questions during the reading :
   * what is Hebbian principle?
 
     answer:
@@ -54,7 +56,7 @@
     The fundamental way of solving both issues would be by ultimately moving
     from fully connected to sparsely connected architectures, even inside the convolutions.
   ~~~
-# 8.单词:
+# 8.vocabulary:
 hallmark 标志
 incarnation 实例
 synergy 协同效应
@@ -84,6 +86,8 @@ modest 谦逊
 bound to vary 必然会变化
 prohibitively expensive 非常昂贵
 pronounced 明显
+
+
 judiciously 明智地
 projections 投影
 embedding 嵌入

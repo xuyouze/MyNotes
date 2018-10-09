@@ -3,17 +3,17 @@
 
   **_Network In Network_**
 
-# 1.有什么问题:
+# 1.background problem:
 
   * conventional CNN uses linear filter followed by a nonlinear activation function to scan the input, however the level of abstraction is low with GLM.
 
   * We need to replace GLM with a more potent nonlinear function approximator to enhance the abstraction ability of the local model.
 
-  * it is difficult to intepret how the categoriy level information from the objective cost layer is passed back to the previous convolution layer due to the fully connected layer which act as a black box in between
+  * it is difficult to interpret how the category level information from the objective cost layer is passed back to the previous convolution layer due to the fully connected layer which act as a black box in between
 
   * the fully connected layers are prone to overfitting without the dropout, hampering the regularization ability of the overall structure.
 
-# 2.提出了什么:
+# 2.the proposed methods:
 
 1. propose a structure called mlpconv layer consisting of multiple fully connected layers with nonlinear activation functions
 * replace **GLM** with a **'micro network'** structure which is a general nonlinear function approximator.
@@ -22,14 +22,14 @@
 
 * replace **fully connected layers** with **global average pooling layer**
 
-# 3.数据集:
+# 3.dataset:
 	CIFAR-10, CIFAR-100, SVHN, MNIST
 
-# 4.解决了什么:
+# 4.advantages:
 ~~~
 
 ~~~
-# 5.方法的细节:
+# 5.the detail of methods:
 1. why choose MLP as the universal function approximator:
   *  MLP is compatible with the structure of CNN which is trained using bp
   *  MLP can be a deep model itself, which is consistent with the spirit of feature re-use.
@@ -40,11 +40,11 @@
 
 
 
-# 6.方法有什么贡献:
+# 6.contribution:
   * propose mlp conv layer and 1*1 kernel convolution layer.
   * replace fully connected layer with global average pooling layer
 
-# 7. 阅读中思考的问题:
+# 7. any questions during the reading:
 
 1. why filter is a GLM for the underlying data path:
 
@@ -69,7 +69,7 @@
   * 对于 *GAP*, 它是 前缀的，只有在相同值上的对角元素上不为零。
   * 对于 *FC*,  它可以拥有密集的变换矩阵,并且值可以通过bp 调整。
 
-# 8.单词:
+# 8.vocabulary:
 
 discriminability 可区分性<br/>
 patch 补丁<br/>
