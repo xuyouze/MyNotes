@@ -4,6 +4,8 @@ paper list as follow:
 * **_Multi-task learning of cascaded CNN for facial attribute classification PR_** as **FAC.md**
 * **_Network In Networks_** as **NIN.md**
 * **_VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION_** as **_VGG.md_**
+* **_Going deeper with convolution_** as **_GoogLeNet.md_**
+
 
 论文的缺陷:
   1. 速度太慢
