@@ -11,42 +11,51 @@
   * propose a cnn architeture which is stacking of Inception
 
 # 3.dataset:
-
+  * the same with VGG-net ,submit in ILVRC14.
 # 4.advantages:
 
 # 5.the detail of methods:
   * why was the Inception proposed ?
-    * answer
+    * the fundamental way of solving those issues would be by ultimately moving from fully conneted to sparsely conneted architectures.
+    * It started out as a case study of the first author for assessing the hypothetical output of a sophisticated network topology construction algorithm that tries to approximate a sparse structure implied by for vision networks and convering the hypothesized outcome by dense, readily available components 
 
-  * what the idea of Inception?
+  * what is the idea of Inception?
     * It is based on finding out how an optimal local sparse structure in a convolutional vision network can be approximated and covered by readily available dense conponents.
-
-  * what is the beneficial of the Inception?
+    
+  * what is the advantages of the Inception?
     * it allows for increasing the number of units at each stage significantly without an uncontrolled blow-up in computational complexity.The ubiquitous use of dimension reduction allows for shielding the large number of input filters of the last stage to the next layer, first reducing their dimension before convolving over them with a large patch size.
 
     *  it aligns with the intuition that visual information should be processed at various scales and then aggregated so that the next stage can abstract features from different scales simultaneously.
 
+  * see this [note](https://zhuanlan.zhihu.com/p/32702031) may help understand this paper.
+
   * the structure of Inception as followd:
-
-  ![Aaron Swartz](https://raw.githubusercontent.com/xuyouze/MyNotes/master/images/Inception.jpg)<br/>
-
     * 1\*1 convolution  
     * 1\*1 convolution + 3\*3 convolution
     * 1\*1 convolution + 5\*5 convolution
     * 3\*3 maxpooling + 1\*1 convolution  
-
     it is a combination of all those layers with their output filter banks concatenated into a single output vector forming the input of the next stages.
 
+      ![Aaron Swartz](https://raw.githubusercontent.com/xuyouze/MyNotes/master/images/Inception.jpg)<br/>
+
+    
+  * the detail of GoogLeNet:
+    * input size is 224\*224\*3.
+    * all convoluction use ReLU activation.
+    * include 22 layers when counting only layers with parameters 
 
 # 6.contribution:
-
+  * Use 1x1 convolution to perform lifting dimension
+  * apply multi-scale convolution on previous stage and concatenated them into a single output vector forming the input of the next stages
 # 7.any questions during the reading :
   * what is Hebbian principle?
 
-    answer:
+    answer: 
+    Hebbin原理是神经科学上的一个理论，解释了在学习的过程中脑中的神经元所发生的变化，用一句话概括就是fire togethter, wire together。赫布认为“两个神经元或者神经元系统，如果总是同时兴奋，就会形成一种‘组合’，其中一个神经元的兴奋会促进另一个的兴奋”。比如狗看到肉会流口水，反复刺激后，脑中识别肉的神经元会和掌管唾液分泌的神经元会相互促进，“缠绕”在一起，以后再看到肉就会更快流出口水。用在inception结构中就是要把相关性强的特征汇聚到一起。这有点类似上面的解释2，把1x1，3x3，5x5的特征分开。因为训练收敛的最终目的就是要提取出独立的特征，所以预先把相关性强的特征汇聚，就能起到加速收敛的作用
   * what is Gabor filters?
 
-    answer:
+    answer: It is a linear filter used for texture analysis, which means that it basically analyzes whether there are any specific frequency content in the image in specific directions in a localized region around the point or region of analysis. 
+
   * what is the purpose of using 1*1 convolutions:
     * use as a dimension reduction modules to remove computational bottlenecks
     * width network without significant performance penalty
@@ -55,8 +64,18 @@
   ~~~
     The fundamental way of solving both issues would be by ultimately moving
     from fully connected to sparsely connected architectures, even inside the convolutions.
+    
   ~~~
-# 8.vocabulary:
+
+
+
+  
+  * why the computer infrastructures is very inefficient when it comes to numerical calculation on non-uniform sparse data structures.
+
+    *answer:
+
+  
+# 8. vocabulary:
 hallmark 标志
 incarnation 实例
 synergy 协同效应
@@ -87,10 +106,22 @@ bound to vary 必然会变化
 prohibitively expensive 非常昂贵
 pronounced 明显
 
-
+culmination 起点
 judiciously 明智地
-projections 投影
 embedding 嵌入
 aggregated 合计
 depict 描绘
 ubiquitous 普及
+oriented 面向
+sparsity 稀疏性
+imply 隐晦
+inferior 劣势
+homage 尊敬
+ensemble 整体
+omit 忽略
+marginally 轻微地
+minor 次要的
+discard 丢弃
+extra
+extraction
+exact

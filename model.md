@@ -1,18 +1,18 @@
 
 # Paper Name:
 
-# 1.background problem:
+# 1. background problem:
 
-# 2.the proposed methods:
+# 2. the proposed methods:
 
-# 3.dataset:
+# 3. dataset:
 
-# 4.advantages:
+# 4. advantages:
 
-# 5.the detail of methods:
+# 5. the detail of methods:
 
-# 6.contribution:
+# 6. contribution:
 
-# 7.any questions during the reading :
+# 7. any questions during the reading :
 
 # 8. vocabulary:
