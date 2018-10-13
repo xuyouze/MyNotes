@@ -3,7 +3,7 @@
 **_Deep Residual Learning for Image Recognition_**
 # 1. background problem:
   * deeper neural networks are more difficult to train due to the vanishing/exploding gradient problem.
-  * with the network depth increasing, accuracy gets saturated and then degrades rapidly.
+  * with the network depth increasing, accuracy gets saturated and then degrades rapidly.
 
 # 2. the proposed methods:
   * in order to address problems as mentioned before,introducing a deep residual learning framework.

@@ -37,7 +37,7 @@
     * 3\*3 maxpooling + 1\*1 convolution  
     it is a combination of all those layers with their output filter banks concatenated into a single output vector forming the input of the next stages.
 
-      ![Aaron Swartz](https://raw.githubusercontent.com/xuyouze/MyNotes/master/images/Inception.jpg)<br/>
+      ![Inception structure](./images/Inception.jpg)<br/>
 
   * the detail of GoogLeNet:
     * input size is 224\*224\*3.
