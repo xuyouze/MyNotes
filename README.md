@@ -5,7 +5,7 @@ paper list as follow:
 * **_Network In Networks_**  [NIN.md](https://github.com/xuyouze/MyNotes/blob/master/NIN.md)
 * **_VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION_**  [VGG.md](https://github.com/xuyouze/MyNotes/blob/master/VGG.md)
 * **_Going deeper with convolution_** [GoogLeNet.md](https://github.com/xuyouze/MyNotes/blob/master/GoogLeNet.md)
-* **_Deep Residual Learning for Image Recognition_** [ResNet.md]()
+* **_Deep Residual Learning for Image Recognition_** [ResNet.md](./ResNet.md)
 
 论文的缺陷:
   * 速度太慢
