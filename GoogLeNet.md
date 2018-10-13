@@ -49,14 +49,15 @@
   * Use 1x1 convolution to perform lifting dimension
   * apply multi-scale convolution on previous stage and concatenated them into a single output vector forming the input of the next stages
   * improve that moving to sparser architectures is feasible and useful idea in general.
+  
 # 7. any questions during the reading:
   * what is Hebbian principle?
-
     answer: 
     Hebbin原理是神经科学上的一个理论，解释了在学习的过程中脑中的神经元所发生的变化，用一句话概括就是fire together, wire together。赫布认为“两个神经元或者神经元系统，如果总是同时兴奋，就会形成一种‘组合’，其中一个神经元的兴奋会促进另一个的兴奋”。比如狗看到肉会流口水，反复刺激后，脑中识别肉的神经元会和掌管唾液分泌的神经元会相互促进，“缠绕”在一起，以后再看到肉就会更快流出口水。用在inception结构中就是要把相关性强的特征汇聚到一起。这有点类似上面的解释2，把1x1，3x3，5x5的特征分开。因为训练收敛的最终目的就是要提取出独立的特征，所以预先把相关性强的特征汇聚，就能起到加速收敛的作用
   * what is Gabor filters?
 
-    answer: It is a linear filter used for texture analysis, which means that it basically analyzes whether there are any specific frequency content in the image in specific directions in a localized region around the point or region of analysis. 
+    answer: 
+    It is a linear filter used for texture analysis, which means that it basically analyzes whether there are any specific frequency content in the image in specific directions in a localized region around the point or region of analysis. 
 
   * what is the purpose of using 1*1 convolutions:
     * use as a dimension reduction module to remove computational bottlenecks
@@ -69,7 +70,7 @@
     
   ~~~
   * why the computer infrastructures is very inefficient when it comes to numerical calculation on non-uniform sparse data structures.
-    * answer:
+    answer:
   
 # 8. vocabulary:
 hallmark 标志

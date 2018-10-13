@@ -1,11 +1,11 @@
 # This is my notebook about papers in what I have read.
 paper list as follow:
-* **_ImageNet Classification with Deep Convolutional Neural Networks_** as **AlexNet.md**
-* **_Multi-task learning of cascaded CNN for facial attribute classification PR_** as **FAC.md**
-* **_Network In Networks_** as **NIN.md**
-* **_VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION_** as **_VGG.md_**
-* **_Going deeper with convolution_** as **_GoogLeNet.md_**
-
+* **_ImageNet Classification with Deep Convolutional Neural Networks_** [AlexNet.md](https://github.com/xuyouze/MyNotes/blob/master/AlexNet.md)
+* **_Multi-task learning of cascaded CNN for facial attribute classification PR_**  [FAC.md](https://github.com/xuyouze/MyNotes/blob/master/FAC.md)
+* **_Network In Networks_**  [NIN.md](https://github.com/xuyouze/MyNotes/blob/master/NIN.md)
+* **_VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION_**  [VGG.md](https://github.com/xuyouze/MyNotes/blob/master/VGG.md)
+* **_Going deeper with convolution_** [GoogLeNet.md](https://github.com/xuyouze/MyNotes/blob/master/GoogLeNet.md)
+* **_Deep Residual Learning for Image Recognition_** [ResNet.md]()
 
 论文的缺陷:
   * 速度太慢
