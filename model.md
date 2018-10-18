@@ -1,6 +1,8 @@
 
 # Paper Name:
 
+# publishing information
+
 # 1. background problem:
 
 # 2. the proposed methods:

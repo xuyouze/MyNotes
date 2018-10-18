@@ -1,6 +1,8 @@
 
 # Paper Name:
 **_Going deeper with convolution_**
+# publishing information
+C.Szegedy,W.Liu,Y.Jia,P.Sermanet,S.Reed,D.Anguelov,D.Er- han, V. Vanhoucke, and A. Rabinovich. Going deeper with convolu- tions. In CVPR, 2015.[[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html)
 # 1. background problem:
   * to improve the performance of CNN in accuracy and speed.
   * under the limit of size of the training set, bigger size means a larger number of parameters, which makes the enlarged network more prone to overfitting

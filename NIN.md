@@ -3,6 +3,9 @@
 
   **_Network In Network_**
 
+# publishing information
+M.Lin,Q.Chen,andS.Yan.Networkinnetwork.arXiv:1312.4400,
+2013.[[paper]](https://arxiv.org/abs/1312.4400)
 # 1.background problem:
 
   * conventional CNN uses linear filter followed by a nonlinear activation function to scan the input, however the level of abstraction is low with GLM.

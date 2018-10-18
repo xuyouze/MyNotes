@@ -1,6 +1,8 @@
 
 # Paper Name:
 **_VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION_**
+# publishing information
+K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale image recognition. In ICLR, 2015.[[paper]](https://arxiv.org/abs/1409.1556)
 # 1.background problem:
   * the accuracy of ILSVRC is still low. In order to improve that, this paper modify the architecture of conventional CNN
 

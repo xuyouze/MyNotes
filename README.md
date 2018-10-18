@@ -6,6 +6,7 @@ paper list as follow:
 - [x] **_VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION_**  [VGG.md](./VGG.md)
 - [x] **_Going deeper with convolution_** [GoogLeNet.md](./GoogLeNet.md)
 - [ ] **_Deep Residual Learning for Image Recognition_** [ResNet.md](./ResNet.md)
+- [ ] **_Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift_** [BatchNormalization.md](./BatchNormalization.md)
 
 论文的缺陷:
   * 速度太慢

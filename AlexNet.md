@@ -1,7 +1,9 @@
 
 # Paper Name:
-
    **_ImageNet Classification with Deep Convolutional Neural Networks_**
+# publishing information
+A. Krizhevsky, I. Sutskever, and G. Hinton. Imagenet classification
+with deep convolutional neural networks. In NIPS, 2012.[[paper]](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks)
 
 # 1.有什么问题:
 ~~~
