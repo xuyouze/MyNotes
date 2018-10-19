@@ -17,14 +17,14 @@ network training by reducing internal covariate shift. In ICML, 2015.[[paper]](h
 
 # 3. dataset:
   * `MNIST` input: 28\*28\*1. and three fully-connected hidden layers with 100 activations each followed by a sigmoid function. Last hidden layer is followed by a fully-connected layer with 10 activations and cross-entropy loss.
-  * `LSVRC2012` training as the GoogLeNet, except apply BN to the input of each nonlinearity, in a convolutional way.<br>
-    Model          | steps to 72.2%|  Max accuracy
-    -------------  | ------------- | -----------------
-    Inception      |   31.0*10^6   |  72.2%
-    BN-Baseline    |   13.3.0*10^6 |  72.7%
-    BN-x5          |   2.1*10^6    |  73.0%
-    BN-x30         |   2.7*10^6    |  74.8%
-    BN-x5-Sigmoid  |               |  69.8%
+  * `LSVRC2012` training as the GoogLeNet, except apply BN to the input of each nonlinearity, in a convolutional way.<br>
+    |Model          | steps to 72.2%|  Max accuracy|
+    |-------------  |:--------------:| ------------:|
+    |Inception      |   31.0*10^6   |  72.2%        |
+    |BN-Baseline    |   13.3.0*10^6 |  72.7%        |
+    |BN-x5          |   2.1*10^6    |  73.0%        |
+    |BN-x30         |   2.7*10^6    |  74.8%        |
+    |BN-x5-Sigmoid  |               |  69.8%        |
     
 # 4. advantages:
   * dramatically accelerates the training of deep neural nets
@@ -103,7 +103,6 @@ stand-alone 独立
 account for 考虑
 omit 忽略
 crucial 重要的
-affine 仿射
 inference 推理
 subsumed 归入
 resilient 弹性
