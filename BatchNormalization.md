@@ -16,8 +16,8 @@ network training by reducing internal covariate shift. In ICML, 2015.[[paper]](h
   * propose a new mechanism, which called Batch Normalization, that takes a step towards reducing internal covariate shift. 
 
 # 3. dataset:
-  * `MNIST` input: 28\*28\*1. and three fully-connected hidden layers with 100 activations each followed by a sigmoid function. Last hidden layer is followed by a fully-connected layer with 10 activations and cross-entropy loss.
-  * `LSVRC2012`. training as the GoogLeNet, except apply BN to the input of each nonlinearity, in a convolutional way.
+  * `MNIST` input: 28\*28\*1. and three fully-connected hidden layers with 100 activations each followed by a sigmoid function. Last hidden layer is followed by a fully-connected layer with 10 activations and cross-entropy loss.
+  * `LSVRC2012` training as the GoogLeNet, except apply BN to the input of each nonlinearity, in a convolutional way.<br>
     Model          | steps to 72.2%|  Max accuracy
     -------------  | ------------- | -----------------
     Inception      |   31.0*10^6   |  72.2%
@@ -30,8 +30,8 @@ network training by reducing internal covariate shift. In ICML, 2015.[[paper]](h
   * dramatically accelerates the training of deep neural nets
   * has a beneficial effect on the gradient flow through the network through the network, by reducing the dependence of gradients on the scale of parameters or their initial values.
   * allow us to use much higher learning rates without the risk of divergence.
-  * it regularizes the model and reduces the need for Dropout.
-  * and BN can also make it possible to use saturating nonlinearities such as Sigmoid by preventing the network from getting stuck in the saturated modes.
+  * it regularizes the model and reduces the need for Dropout.
+  * and BN can also make it possible to use saturating nonlinearities such as Sigmoid by preventing the network from getting stuck in the saturated modes.
   * when apply it to the GoogLeNet, show that match its performance using only 7% of the training steps, and can further exceed its accuracy by a substantial margin(train **_faster_** and achieve **_higher accuracy_** )
   * the learned affine transform applied to these normalized activations allows the BN transform to represent the identity transformation and preserves the network **_capacity_**.
 
@@ -77,7 +77,7 @@ network training by reducing internal covariate shift. In ICML, 2015.[[paper]](h
 # 6. contribution:
 
 # 7. any questions during the reading :
-  * what is the **_internal convariate shift_**
+  * what is the **_internal convariate shift_**<br>
   answer: it is the change in the distribution of network activations due to the change in network parameters during training.
 
 # 8. vocabulary:
@@ -98,13 +98,13 @@ subsequent 随后
 consequence 结果
 scale 规模、比例
 scalar 标量
-empirically 经验
+empirically 经验
 stand-alone 独立
 account for 考虑
 omit 忽略
 crucial 重要的
-affine 仿射
-inference 推理
+affine 仿射
+inference 推理
 subsumed 归入
 resilient 弹性
 consecutive 连续
