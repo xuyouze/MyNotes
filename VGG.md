@@ -2,9 +2,10 @@
 # Paper Name:
 **_VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION_**
 # publishing information
-K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale image recognition. In ICLR, 2015.[[paper]](https://arxiv.org/abs/1409.1556)
+K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale image recognition. In ICLR, 2015. [[paper]](https://arxiv.org/abs/1409.1556)
 # 1.background problem:
   * the accuracy of ILSVRC is still low. In order to improve that, this paper modify the architecture of conventional CNN
+  * and there is no one systematically evaluate the impact of depth on convolution neural network.
 
 # 2. the proposed methods:
   * a thorough evaluation of networks of increasing depth using an architecture with 3\*3 convolution filters.
@@ -40,7 +41,7 @@ K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale i
     * multi-crop evaluation is complementary to dense evaluation due to different convolution boundary conditions: when applying a ConvNet to a crop, the convolved feature maps are padded with zeros, while in the case of dense evaluation the padding for the same crop naturally comes from the neighboring parts of an image (due to both the convolutions and spatial pooling), which substantially increases the overall network receptive field, so more context is captured.
 
 # 6. contribution:
-  * show that Local Response Normalization normalization does not improve the performance on the ILSVRC dataset, but lead to increased memory consumption and computation time
+  * show that Local Response Normalization does not improve the performance on the ILSVRC dataset, but lead to increased memory consumption and computation time
 
   * indicate that while the additional 1\*1 does help, it is also important to capture spatial context by using conv filter with non-trivial receptive such as 3\*3.
 
