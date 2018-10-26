@@ -2,7 +2,7 @@
 # Paper Name:
 **_Going deeper with convolution_**
 # publishing information
-C.Szegedy,W.Liu,Y.Jia,P.Sermanet,S.Reed,D.Anguelov,D.Er- han, V. Vanhoucke, and A. Rabinovich. Going deeper with convolu- tions. In CVPR, 2015.[[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html)
+C.Szegedy,W.Liu,Y.Jia,P.Sermanet,S.Reed,D.Anguelov,D.Er- han, V. Vanhoucke, and A. Rabinovich. Going deeper with convolutions. In CVPR, 2015.[[paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html)
 # 1. background problem:
   * to improve the performance of CNN in accuracy and speed.
   * under the limit of size of the training set, bigger size means a larger number of parameters, which makes the enlarged network more prone to overfitting
@@ -19,7 +19,7 @@ C.Szegedy,W.Liu,Y.Jia,P.Sermanet,S.Reed,D.Anguelov,D.Er- han, V. Vanhoucke, and 
   * Inception
     * it allows for increasing the number of units at each stage significantly without an uncontrolled blow-up in computational complexity. The ubiquitous use of dimension reduction allows for shielding the large number of input filters of the last stage to the next layer, first reducing their dimension before convolving over them with a large patch size.
 
-    *  it aligns with the intuition that visual information should be processed at various scales and then aggregated so that the next stage can abstract features from different scales simultaneously.
+    * it aligns with the intuition that visual information should be processed at various scales and then aggregated so that the next stage can abstract features from different scales simultaneously.
 
   
 # 5. the detail of methods:
@@ -104,7 +104,6 @@ modest 谦逊
 bound to vary 必然会变化
 prohibitively expensive 非常昂贵
 pronounced 明显
-
 culmination 起点
 judiciously 明智地
 embedding 嵌入
