@@ -1,6 +1,6 @@
 
 # Paper Name:
-**_Rich feacture hierarchies for accurate object detection and semantic segmentation_**
+**_Rich feature hierarchies for accurate object detection and semantic segmentation_**
 
 # publishing information
 R. Girshick, J. Donahue, T. Darrell, and J. Malik. Rich feature hierarchies for accurate object detection
@@ -14,18 +14,18 @@ and semantic segmentation. In CVPR, 2014.
 
 # 2. the proposed methods:
   * one can apply high-capacity convolutional neural networks to bottom-up region proposals in order to localize and segment object.
-  * and when labeled training data is scarce, superivsed pre-training for an auxiliary task, followd by domain-specific fine-tuning, yields a significant performance boost.
+  * and when labeled training data is scarce, supervised  pre-training for an auxiliary task, followed by domain-specific fine-tuning, yields a significant performance boost.
 
 # 3. dataset:
   * PASCAL VOC 2007 mAP 58.5% using AlexNet, and 66% using VGGNet, but the compute time in VGGNet is 7 times longer than AlexNet.
   * PASCAL VOC 2010 mAP 53.7%
   * ILSVRC 2013 mAP 31.4%
   * PASCAL VOC 2011 segmentation 47.9% 
-  * validate all desigin decisions and hyperparameters on VOC 2007
+  * validate all design decisions and hyperparameters on VOC 2007
   * fine tuned CNN on VOC 2012 train and optimized detection SVM on VOC 2012 trainval
 
 # 4. advantages:
-  * more faster 
+  * faster 
     * all CNN parameters are shared across all categories and that are also two orders of magnitude lower dimensional than previously used region features.
     * feature vectors computed by the CNN are low-dimensional(4k) when compared to other common approaches.
     * 13s/image on a GPU, or 53s/image on g CPU
@@ -39,10 +39,10 @@ and semantic segmentation. In CVPR, 2014.
     * constrained parametric min-cuts
     * multi-scale combinatorial grouping 
     * run in "fast mode" on each image in val1,val2 and test(but not on images in train)
-    * on train set, we resize each image to a fixed width(500 pixels) before runing selective search. on val set , selective search resulted in an average of 2403 proposal per image with a 91.6% recall of all ground-truth bounding boxes.
+    * on train set, we resize each image to a fixed width(500 pixels) before running selective search. on val set, selective search resulted in an average of 2403 proposal per image with a 91.6% recall of all ground-truth bounding boxes.
 
-  * second modules: Feacture extraction
-    * regradless of the size or aspect radio of the candidate region, warp all pixels in a tight bounding box around it to the required size, and before warping, dilate the tight bounding box so that at the warped size there are exactly p pixels of warped image context around the original box (use p = 16)
+  * second modules: Feature extraction
+    * regardless of the size or aspect radio of the candidate region, warp all pixels in a tight bounding box around it to the required size, and before warping, dilate the tight bounding box so that at the warped size there are exactly p pixels of warped image context around the original box (use p = 16)
     * use AlexNet as the CNN architecture, extract a 4096-dimensional feature vector from each region proposal.
 
   * third modules :SVMs
@@ -50,8 +50,8 @@ and semantic segmentation. In CVPR, 2014.
   * CNN training procedure
     * supervised pre-trained CNN using ILSVRC 2012(image classification)
     * then replace the last layer with N+1 softmax
-    * using warped region proposals from selective search to train CNN (image detection),and IoU is 0.5
-    * fine-tuning overview : selective search -> 2k region proposals -> CNN extract a 4096-dimensionsal feature vetor -> N+1 softmax 
+    * using warped region proposals from selective search to train CNN (image detection), and IoU is 0.5
+    * fine-tuning overview : selective search -> 2k region proposals -> CNN extract a 4096-dimensionsal feature vector -> N+1 softmax 
   * SVM training procedure
     * using pool5 or fc6 or fc7 as the feature to train SVM
     * overview: selective search -> NMS -> standard hard negative mining method -> fine-tuning CNN extract feature -> train SVM linear classifier 
@@ -72,10 +72,10 @@ and semantic segmentation. In CVPR, 2014.
     ![loss function](./images/Boundingbox-regression-loss.jpg)<br/>
     * $\hat{w}_*$ is a learnable model parameters.
     $\phi_5(P^i)$ is the pool5 feature of proposal P.
-    and $t^i_* $ denote as follow:
+    and $t^i_* $ denote as follow:·
     ![t](./images/Boundingbox-regression-t.jpg)<br/>
     
-    * because of scale invariance, $t_x、t_y$ must divide the width or heigh of the proposal.
+    * because of scale invariance, $t_x、t_y$ must divide the width or height of the proposal.
     * we need insure the $t_w 、t_h$ bigger than zero. so add log function.
 
 # 6. contribution:
@@ -117,7 +117,7 @@ warp 变形
 semantic segmentation 语义分割
 versus 和
 contemporaneous 同期
-supression 压制
+suppression 压制
 opt 选择
 dilate 膨胀
 clobber 破坏

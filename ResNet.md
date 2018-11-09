@@ -1,22 +1,67 @@
 
 # Paper Name:
 **_Deep Residual Learning for Image Recognition_**
+
+# publishing information
+K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognition. In CVPR, 2016
+[[paper]](https://arxiv.org/pdf/1512.03385.pdf)
+
 # 1. background problem:
-  * deeper neural networks are more difficult to train due to the vanishing/exploding gradient problem.
-  * with the network depth increasing, accuracy gets saturated and then degrades rapidly.
+  * the problem of vanishing/exploding gradients has been largely addressed by normalized initialization and intermediate normalization layers.
+  * the degradation problem appear: with the network depth increasingm accuracy gets saturated and then degrades rapidly, and adding more layers to a suitably deep model leads to higher training error.
 
 # 2. the proposed methods:
-  * in order to address problems as mentioned before,introducing a deep residual learning framework.
+  * in order to address problems as mentioned before, introducing a deep residual learning framework.
+  
 # 3. dataset:
-  * ILSVRC-2015 top-5 3.57%
-  * COCO detection and COCO segmentation
+  * top-5 3.57%  won the 1st place in ILSVRC-2015 classification competition.
+  * won the 1st place in ILSVRC-2015 detection and localization competition.
+  * COCO detection and COCO segmentation in ILSVRC & COCO2015 competition.
+
 # 4. advantages:
+  * alleviate the problem of degradation.
+  * residual nets are easy to optimizem and can easily enjoy accuracy gains from greatly increased depth, producing results substantially better than previous networks.
 
 # 5. the detail of methods:
-  * residual block
+  * residual block:
+    * base on the hypothesizes that multiple nonlinear layers can asymptotically approximate complicated function.
+    * denote the desired underlying mapping as H(x) , F(x) as the residual mapping ,F(x) = H(x) - x, x is the layer input,
+    * the shortcut connection are skipping one or more layers and perform identity mapping and their outputs are added to the output of the stacked layers.
+    * add a shortcut connection are easier to optimize the residual mapping than to optimize the original
+    * 0->H(x) is hard but x->H(x) is easier
+    * this is motivated by the counterintuitive phenomena about the degradation problem.
+      ![Residual block](./images/ResNet-ResidualBlock.jpg)<br/>
+    * F+x is performed by a shortcut connection and element-wise addition (normal addition)
+  
+  * when changing the input/output of channels, change the formulation as follow:
+      $$ y = f(x, { W_i}) + W_s*x$$
+    * F is flexible. F at least has two or three layers,while more layers are possible.
+
+  * shortcut connection
+    * GoogleNet connected to auxiliary classifiers for addressing vanishing/exploding gradient
+    * inception layer is composed of a shortcut branch and a few deeper branches.
+    * concurrent works like highway network, present shortcut connections with gating functions, whichare data-dependent and have parameters.
+
+  * network architectures
+    * plain network 
+      * for the same output of feature map size, layers have the same number of filter.
+      * feature map size is halve, the number of filters is doubled.
+      * downsample by convolutional layers that have a stride of 2.
+      
+  * experiment
 # 6. contribution:
+  * the degradation problem suggests that the solvers may have difficulties in approximating identity mappings by multiple nonlinear layers.
 
 # 7. any questions during the reading :
+  * what is degradation problem:
+    * with the network depth increaing, accuracy gets saturated and then degrades rapidly.
+    * such degradation is not caused by overfitting, and adding more layers to a suitable deep model leads to higher training error.
+
+  * why it is hard to learn a indentity mapping after several layers.
+
+  * what is VLAD?
+  * section 2 residual representation is hard to understand.
+
 
 # 8. vocabulary:
 reformulate 重新定制
@@ -30,5 +75,16 @@ notorious 臭名昭著
 covergence 收敛
 degradation 降解
 counterpart 副本
-
+akin 类似的
+generic 通用的
+image retrieval 图像检索
+in contrast 
+on the contary of 
+asymptotically 渐进
+counterintuitive 有悖常理
+precondition 前提
+perturbations 扰动
+negligible 微不足道
+philosophy 哲学
+analogous 类似的
 
