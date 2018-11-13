@@ -7,9 +7,9 @@ paper list as follow:
 - [x] **_Going deeper with convolution_** [GoogLeNet.md](./GoogLeNet.md)
 - [x] **_Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift_** [BatchNormalization.md](./BatchNormalization.md)
 - [x] **_Rich feacture hierarchies for accurate object detection and semantic segmentation_**  [R-CNN.md](./R-CNN.md)
+- [x] **_Deep Residual Learning for Image Recognition_** [ResNet.md](./ResNet.md)
 
 - [ ] **_Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification_** [DelvingDeepintoRectifiers.md](./DelvingDeepIntoRectifiers.md)
-- [ ] **_Deep Residual Learning for Image Recognition_** [ResNet.md](./ResNet.md)
 
 论文的缺陷:
   * 速度太慢
