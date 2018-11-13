@@ -8,10 +8,10 @@ K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognitio
 
 # 1. background problem:
   * the problem of vanishing/exploding gradients has been largely addressed by normalized initialization and intermediate normalization layers.
-  * the degradation problem appear: with the network depth increasingm accuracy gets saturated and then degrades rapidly, and adding more layers to a suitably deep model leads to higher training error.
+  * the degradation problem appear: with the network depth increasing accuracy gets saturated and then degrades rapidly, and adding more layers to a suitably deep model leads to higher training error.
 
 # 2. the proposed methods:
-  * in order to address problems as mentioned before, introducing a deep residual learning framework.
+  * in order to address problems as mentioned before, introducing a deep residual learning framework, which contains identity mapping shortcut.
   
 # 3. dataset:
   * top-5 3.57%  won the 1st place in ILSVRC-2015 classification competition.
@@ -24,6 +24,7 @@ K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognitio
 
 # 5. the detail of methods:
   * residual block:
+
     * base on the hypothesizes that multiple nonlinear layers can asymptotically approximate complicated function.
     * denote the desired underlying mapping as H(x) , F(x) as the residual mapping ,F(x) = H(x) - x, x is the layer input,
     * the shortcut connection are skipping one or more layers and perform identity mapping and their outputs are added to the output of the stacked layers.
@@ -32,23 +33,29 @@ K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognitio
     * this is motivated by the counterintuitive phenomena about the degradation problem.
       ![Residual block](./images/ResNet-ResidualBlock.jpg)<br/>
     * F+x is performed by a shortcut connection and element-wise addition (normal addition)
-  
-  * when changing the input/output of channels, change the formulation as follow:
-      $$ y = f(x, { W_i}) + W_s*x$$
     * F is flexible. F at least has two or three layers,while more layers are possible.
 
-  * shortcut connection
+  * shortcut connection 
     * GoogleNet connected to auxiliary classifiers for addressing vanishing/exploding gradient
     * inception layer is composed of a shortcut branch and a few deeper branches.
     * concurrent works like highway network, present shortcut connections with gating functions, whichare data-dependent and have parameters.
+
+  * three option for shortcut 
+    * A) extra zero entries padded for increasing dimension which introduces no extra parameter
+    * B) projection shortcut change the formulation as follow, projection shortcuts are used for increasing dimension, and other shortcuts are identity.
+      $$ y = f(x, { W_i}) + W_s*x$$
+    * C) all shortcuts are projections.
+    * as result, all options are better than plain counterpart, B is slightly better than A. C is marginally better than B.
+
 
   * network architectures
     * plain network 
       * for the same output of feature map size, layers have the same number of filter.
       * feature map size is halve, the number of filters is doubled.
       * downsample by convolutional layers that have a stride of 2.
-      
-  * experiment
+    * The structure of Resnet is the same as plain net except for add shortcuts.
+    ![architectures](./images/ResNet-NetworkStructure.jpg)<br/>
+    
 # 6. contribution:
   * the degradation problem suggests that the solvers may have difficulties in approximating identity mappings by multiple nonlinear layers.
 
@@ -60,7 +67,13 @@ K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognitio
   * why it is hard to learn a indentity mapping after several layers.
 
   * what is VLAD?
+  
   * section 2 residual representation is hard to understand.
+
+  * what if use $W_s$ in every shortcut?
+    * the accuracy would be better, but the time complexity and model size will double.
+  
+  * why need to warm up when training the 110-layer ResNet using the CIFAR-10 dataset.
 
 
 # 8. vocabulary:
@@ -86,5 +99,8 @@ precondition 前提
 perturbations 扰动
 negligible 微不足道
 philosophy 哲学
+plateaus 高原
 analogous 类似的
+exponentially 成倍
+metrics 指标
 
