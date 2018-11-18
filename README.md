@@ -21,8 +21,8 @@ paper list as follow:
 应对的大体思路:
   * 样本太小导致的问题，对数据进行增强
   *  对网络组件进行增、删、改
-	model|top-1|top-5
-	:---:|:---:|:---:
-	ResNet-50|22.9%|6.7%
-	ResNet-101|21.8%|6.1%
-	ResNet-152|21.4%|5.7%
+| Tables | Are | Cool |
+|:-------------:|:-------------:|:-----:|
+| col 3 is | right-aligned | 1600|
+|col2is|centered|12 |
+| zebra stripes | are neat | $1 |
