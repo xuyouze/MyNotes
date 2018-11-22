@@ -8,6 +8,7 @@ paper list as follow:
 - [x] **_Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift_** [BatchNormalization.md](./BatchNormalization.md)
 - [x] **_Rich feacture hierarchies for accurate object detection and semantic segmentation_**  [R-CNN.md](./R-CNN.md)
 - [x] **_Deep Residual Learning for Image Recognition_** [ResNet.md](./ResNet.md)
+- [x] **_Spatialpyramidpooling in deep convolutional networks for visual recognition_** 
 
 - [ ] **_Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification_** [DelvingDeepintoRectifiers.md](./DelvingDeepIntoRectifiers.md)
 
@@ -21,8 +22,3 @@ paper list as follow:
 应对的大体思路:
   * 样本太小导致的问题，对数据进行增强
   *  对网络组件进行增、删、改
-| Tables | Are | Cool |
-|:-------------:|:-------------:|:-----:|
-| col 3 is | right-aligned | 1600|
-|col2is|centered|12 |
-| zebra stripes | are neat | $1 |
