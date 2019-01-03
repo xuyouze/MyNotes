@@ -8,7 +8,7 @@ K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognitio
 
 # 1. background problem:
   * the problem of vanishing/exploding gradients has been largely addressed by normalized initialization and intermediate normalization layers.
-  * the degradation problem appear: with the network depth increasing accuracy gets saturated and then degrades rapidly, and adding more layers to a suitably deep model leads to higher training error.
+  * the degradation problem appears: with the network depth increasing accuracy gets saturated and then degrades rapidly and adding more layers to a suitably deep model leads to higher training error.
 
 # 2. the proposed methods:
   * in order to address problems as mentioned before, introducing a deep residual learning framework, which contains identity mapping shortcut.
@@ -20,7 +20,7 @@ K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognitio
 
 # 4. advantages:
   * alleviate the problem of degradation.
-  * residual nets are easy to optimizem and can easily enjoy accuracy gains from greatly increased depth, producing results substantially better than previous networks.
+  * residual nets are easy to optimize and can easily enjoy accuracy gains from greatly increased depth, producing results substantially better than previous networks.
 
 # 5. the detail of methods:
   * residual block:

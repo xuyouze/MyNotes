@@ -3,7 +3,7 @@
 
 # publishing information
 
-# 1. background problem:
+# 1. background problem/motivation:
 
 # 2. the proposed methods:
 

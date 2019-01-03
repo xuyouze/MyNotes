@@ -2,6 +2,10 @@
 
 `矩阵乘法` **np.dot(A, B)、np.matmul(A,B)** 
 `对应元素相乘` **np.multiply(A, B)**、**A\*B** 
+`矩阵除法` 
+`相加` **np.sum(A,axis)**
+axis= 0 列相加,axis = 1  行相加
+
 
 `范数、欧式距离` 
 **np.linalg.norm** (A, ord=None, axis=None, keepdims=False)
@@ -23,6 +27,10 @@ order : {‘C’, ‘F’}, 行优先还是列优先, default: C
 **np.ones_like**(a, dtype=None, order='K', subok=True)
 **np.zeros_like**(a, dtype=None, order='K', subok=True)
 **numpy.full_like**(a, fill_value, dtype=None, order='K', subok=True)
+`one-hot编码`**np.eye**(num_example, num_class)[y.reshape(-1)]
+`对角矩阵`**np.eye**(N, M=None, k=0, dtype=<class 'float'>, order='C')
+`恒等矩阵`**numpy.identity**(n, dtype=None)
+
 
 ### 计算两个矩阵的欧式距离
 $ || A-B||_2 = \sqrt{||X||_2 + ||Y||_2 - 2 * X*Y^T} $

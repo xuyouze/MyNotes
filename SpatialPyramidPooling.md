@@ -5,13 +5,13 @@
 K.He,X.Zhang,S.Ren,andJ.Sun.Spatialpyramidpooling in deep convolutional networks for visual recognition. In ECCV,2014[[paper]](https://arxiv.org/abs/1406.4729)
 # 1. background problem/ motivation:
   * the prevalent CNNs methods require a **fixed** input image size(e.g., 224*224), which limits aspect radio and the scale of the input image.
-  * current methods mostly fit the input image to the fixed size, either via cropping or warping, which may cause imformation loss.
-  * conv layers accept arbitrary input sizes, and produce ouputs of variable sizes. 
+  * current methods mostly fit the input image to the fixed size, either via cropping or warping, which may cause information loss.
+  * conv layers accept arbitrary input sizes, and produce outputs of variable sizes. 
   * the classifiers(e.g., SVM /softmax) or fully connected layers required fixed-length vectors.
 
 
 # 2. the proposed methods:
-  * propose a new network structure, called **SPP-net**, can generate a fixed-length representation regradless of image size/scale.
+  * propose a new network structure, called **SPP-net**, can generate a fixed-length representation regardless of image size/scale.
   * propose multi-size training methods
   * propose a simple combination method for detection.
 
@@ -21,7 +21,7 @@ K.He,X.Zhang,S.Ren,andJ.Sun.Spatialpyramidpooling in deep convolutional networks
   * VOC 2007
 
 # 4. advantages:
-  * Pyramid pooling can generate a fixed-length representation regradlesss of image size/scale, 
+  * Pyramid pooling can generate a fixed-length representation regardlesss of image size/scale, 
   * SPP uses multi-level spatial bins, which shows robust to object deformations.
   * **SPP-net** can **improve all** CNN-based image classification methods.
   * and in object detection, SPP-net compute the feature maps from the entire image only **once**, then pool features in arbitrary regions to generate fixed-length representations for training the detectors.

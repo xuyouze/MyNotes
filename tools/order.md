@@ -28,11 +28,10 @@ python -m ipykernel install --user --name conda_env_name --display-name "display
 `撤销已经add的文件` git head reset <file_name>
 `撤销未提交的文件修改内容` git check <file_name>
 `查看提交历史` git log <file_name>
-`上传` git push <remote> <branch>
-
-
-
-
+`上传代码` git push <remote> <branch>
+`下载代码` git pull <remote> <branch>
+`合并冲突` git merge
+`图形化冲突解决`git mergetool 
 
 
 # markdown
@@ -77,3 +76,10 @@ First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
+
+
+# 服务器上相关操作
+
+`查询cuda` nvcc  --version
+`查询GPU` nvidia-smi
+`每十秒输出` watch -n 10 nvidia-smi
