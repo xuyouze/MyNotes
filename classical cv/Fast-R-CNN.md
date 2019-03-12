@@ -16,7 +16,7 @@ R. Girshick. Fast R-CNN. arXiv:1504.08083, 2015.[[paper]](https://arxiv.org/abs/
 
 # 2. the proposed methods:
   * overall of the architecture
-    ![FRCN architecture](./images/FRCN-architecture.jpg)
+    ![FRCN architecture](../images/FRCN-architecture.jpg)
     * input: entire image and a set of object proposals.
     * feature extractor : VGG or AlexNet.
     * RoI pooling laye: convert feature map with a fixed spatial extent of H x W. this RoI layer is simply the special-case of the spatial pyramid pooling layer used in SPPnets in which there is only one pyramid level.

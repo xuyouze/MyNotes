@@ -25,7 +25,7 @@ K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale i
     * convolution stride is fixed to 1 pixel.
     * architecture as follow:
 
-        ![VGG-structure](./images/VGG-structure.jpg)<br/>
+        ![VGG-structure](../images/VGG-structure.jpg)<br/>
 
   * the advance of using a stack of three 3\*3 conv layers instead of a single 7\*7 layer:
     * it can make the decision more discriminative because of three nonlinear rectification layers

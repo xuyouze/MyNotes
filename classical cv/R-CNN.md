@@ -59,21 +59,21 @@ and semantic segmentation. In CVPR, 2014.
   * system overview
     *  image -> selective search -> CNN features -> SVM -> bounding box regression 
 
-    ![overview](./images/R-CNN-overview.jpg)<br/>
+    ![overview](../images/R-CNN-overview.jpg)<br/>
 
   * bouding-box regression
     * use this to improve localization performance.
     * it is regress frin features computed by the CNN
     * input is a set of N training pairs {($P^i , G^i$)} for i..N, where $P^i = (P^i_x, P^i_y, P^i_w, P^i_h)$ and $G^i = (G^i_x, G^i_y, G^i_w, G^i_h)$, $P_x, P_y$ stand for the center of proposal and $ P_w,P_h$ is the width and height in pixels in proposal, G is the ground-truth bounding box. 
     * We parameterize the transformation in terms of four functions $d_x(P), d_y(P), d_w(P), d_h(P)$. The first two specify a scale-invariant translation of the center of P ’s bounding box, while the second two specify log-space translations of the width and height of P ’s bounding box. After learning these functions, we can transform an input proposal P into a predicted ground-truth box $\hat{G}$ by applying the transformation
-    ![regression goal](./images/Boundingbox-regression-goal.jpg)<br/>    
+    ![regression goal](../images/Boundingbox-regression-goal.jpg)<br/>    
     
     * loss function as follow:
-    ![loss function](./images/Boundingbox-regression-loss.jpg)<br/>
+    ![loss function](../images/Boundingbox-regression-loss.jpg)<br/>
     * $\hat{w}_*$ is a learnable model parameters.
     $\phi_5(P^i)$ is the pool5 feature of proposal P.
     and $t^i_* $ denote as follow:·
-    ![t](./images/Boundingbox-regression-t.jpg)<br/>
+    ![t](../images/Boundingbox-regression-t.jpg)<br/>
     
     * because of scale invariance, $t_x、t_y$ must divide the width or height of the proposal.
     * we need insure the $t_w 、t_h$ bigger than zero. so add log function.

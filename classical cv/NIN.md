@@ -29,9 +29,7 @@ M.Lin,Q.Chen,andS.Yan.Networkinnetwork.arXiv:1312.4400,
 	CIFAR-10, CIFAR-100, SVHN, MNIST
 
 # 4.advantages:
-~~~
 
-~~~
 # 5.the detail of methods:
 1. why choose MLP as the universal function approximator:
   *  MLP is compatible with the structure of CNN which is trained using bp

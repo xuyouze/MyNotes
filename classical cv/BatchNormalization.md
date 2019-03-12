@@ -56,13 +56,13 @@ network training by reducing internal covariate shift. In ICML, 2015. [[paper]](
     * $ \gamma、\beta $ depends both on the training example and **the other examples in the mini-batch**
     * and to conv layer, use the effective mini-batch of size m' = | $\beta$| = m * p * q, and learn a pair of parameters $\gamma^{(k)} $ and $\beta^{(k)}$ `per feature map`
 
-        ![BatchNormalization-Transform](./images/BatchNormalization-Transform.jpg)
+        ![BatchNormalization-Transform](../images/BatchNormalization-Transform.jpg)
   * the backpropagate of Batch Normalization:
     use chain rule, as follows:<br>
-        ![BatchNormalization-BackPropagation](./images/BatchNormalization-BackPropagation.jpg)
+        ![BatchNormalization-BackPropagation](../images/BatchNormalization-BackPropagation.jpg)
   
   * procedure of training batch-normalized networks:<br>
-    ![BatchNormalization-Transform](./images/BatchNormalization-TrainingNetwork.jpg)
+    ![BatchNormalization-Transform](../images/BatchNormalization-TrainingNetwork.jpg)
 
  
   * approaches for accelerating BN network:

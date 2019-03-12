@@ -31,7 +31,7 @@ K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognitio
     * add a shortcut connection are easier to optimize the residual mapping than to optimize the original
     * 0->H(x) is hard but x->H(x) is easier
     * this is motivated by the counterintuitive phenomena about the degradation problem.
-      ![Residual block](./images/ResNet-ResidualBlock.jpg)<br/>
+      ![Residual block](../images/ResNet-ResidualBlock.jpg)<br/>
     * F+x is performed by a shortcut connection and element-wise addition (normal addition)
     * F is flexible. F at least has two or three layers,while more layers are possible.
 
@@ -54,7 +54,7 @@ K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognitio
       * feature map size is halve, the number of filters is doubled.
       * downsample by convolutional layers that have a stride of 2.
     * The structure of Resnet is the same as plain net except for add shortcuts.
-    ![architectures](./images/ResNet-NetworkStructure.jpg)<br/>
+    ![architectures](../images/ResNet-NetworkStructure.jpg)<br/>
     
 # 6. contribution:
   * the degradation problem suggests that the solvers may have difficulties in approximating identity mappings by multiple nonlinear layers.

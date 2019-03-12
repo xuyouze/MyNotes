@@ -83,8 +83,7 @@ Content in the first column | Content in the second column
 `查询cuda` nvcc  --version
 `查询GPU` nvidia-smi
 `每十秒输出` watch -n 10 nvidia-smi
-xuyouze@
-013015
+
 `ssh登陆` ssh username@host_ip 
 `scp传输` scp /path/local_filename username@servername:/path  
 `查询文件大小` du -sh filename

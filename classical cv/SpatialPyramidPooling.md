@@ -34,12 +34,12 @@ K.He,X.Zhang,S.Ren,andJ.Sun.Spatialpyramidpooling in deep convolutional networks
   * SPP-net structure:
 	* in order to solve that problem, introduce a spatial pyramid pooling layer between the conv layers and fc layers to remove the fixed-size constraint of the network 
 	
-	![SPP-net structure](./images/SPPnet-structure.jpg)
+	![SPP-net structure](../images/SPPnet-structure.jpg)
   * spatial pyramid pooling layer:
 	* bin size is fix before the train, use following picture is an example, that is a 3-level spp-layer, which contains three pooling layers and  bins size is (4\*4 + 2\*2+ 1\*1) = 21. the shape of output vector is 1 \* 21 \* 256.
 	* pooling filter size is ceil(a/n), stride is floor(a/n), a is the last conv output size, n is the  output window size for every spatial pooling layers.
 
-	![spatial pyramid pooling layer](./images/SPPnet-layer.jpg)
+	![spatial pyramid pooling layer](../images/SPPnet-layer.jpg)
 
   * experiment on ILSVRC 2012
 	* The images are resized so that the smaller dimension is 256, and a 224×224 crop is picked from the center or the four corners from the entire image1. The data are **augmented** by horizontal flipping and color altering. **Dropout** is used on the two fully-connected layers. The learning rate starts from 0.01, and is divided by 10 (twice) when the error plateaus.
