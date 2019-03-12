@@ -1,0 +1,11 @@
+blog
+
+*.aux
+*.pdf
+*.fls
+*.fdb_latexmk
+*.log
+*.gz
+*.xdv
+.vscode
+*.toc
