@@ -4,7 +4,7 @@
 # publishing information
 K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale image recognition. In ICLR, 2015. [[paper]](https://arxiv.org/abs/1409.1556)
 # 1.background problem:
-  * the accuracy of ILSVRC is still low. In order to improve that, this paper modify the architecture of conventional CNN
+  * the accuracy of ILSVRC is still low. In order to improve that, the method proposed in this paper modifies the architecture of conventional CNN.
   * and there is no one systematically evaluate the impact of depth on convolution neural network.
 
 # 2. the proposed methods:
@@ -12,7 +12,7 @@ K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale i
   *  replace 7\*7 conv layers with three 3\*3 conv layers
 
 # 3. dataset:
-  * ILSVRC-2012 concludes 1000 classes and training set 1.3M, validation 50K, testing 100k. 
+  * ILSVRC-2012 includes 1000 classes and training set 1.3M, validation 50K, testing 100k. 
   best top-1 error 23.7% top-5 error 6.8%
 
 # 4. advantages:

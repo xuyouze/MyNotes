@@ -1,0 +1,33 @@
+cnn 具有三种基本层 卷积层(conv)、池化层(pool)、全连接层(FC)
+
+conv layer
+
+input : n_h * n_w * n_c
+hyperparameters:  s :strides
+                  f :filter size
+                  p :padding
+                  n_c_new :number of filter
+
+parameters : w: f *f * n_c* n_c_new
+             b: bias
+output: n_h_new = int( (n_h+ 2*p - f )/s + 1)
+        n_w_new = int( (n_w+ 2*p - f )/s + 1)
+        n_c_new
+优势:
+    参数共享
+    局部感知
+    多核卷积
+
+pool layer:
+input : n_h * n_w * n_c
+hyperparameters: f: filter size
+                 s: strides
+
+type : Max or average
+output: n_h_new = int( (n_h - f )/s + 1)
+        n_w_new = int( (n_w - f )/s + 1)
+        n_h
+
+pool layer 能提取出真正能识别特征的数值，丢弃不重要的数值
+
+FC layer:
